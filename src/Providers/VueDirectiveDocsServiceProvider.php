@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Kristapsv\VueDirectiveDocs\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Kristapsv\VueDirectiveDocs\Commands\GenerateVueDirectivesDocs;
+use Kristapsv\VueDirectiveDocs\Commands\GenerateVueDirectiveDocs;
 
 class VueDirectiveDocsServiceProvider extends ServiceProvider
 {
@@ -13,7 +13,7 @@ class VueDirectiveDocsServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                GenerateVueDirectivesDocs::class,
+                GenerateVueDirectiveDocs::class,
             ]);
         }
 

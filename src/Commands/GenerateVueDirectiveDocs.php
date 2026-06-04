@@ -10,11 +10,11 @@ use Illuminate\Support\Str;
 use Symfony\Component\Console\Command\Command as CommandAlias;
 use Symfony\Component\Finder\SplFileInfo;
 
-class GenerateVueDirectivesDocs extends Command
+class GenerateVueDirectiveDocs extends Command
 {
-    protected $signature = 'make:vue-directives-docs';
+    protected $signature = 'make:vue-directive-docs';
 
-    protected $description = 'Generate Vue directives IDE documentation';
+    protected $description = 'Generate IDE documentation for custom Vue directives';
 
     public function handle(): int
     {
