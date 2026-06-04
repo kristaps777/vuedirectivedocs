@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kristapsv\VueDirectivesDocs;
+namespace Kristapsv\VueDirectivesDocs\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Kristapsv\VueDirectivesDocs\Commands\GenerateVueDirectivesDocs;

@@ -20,5 +20,12 @@
         "illuminate/support": "^9.0|^10.0|^11.0|^12.0",
         "illuminate/console": "^11.51|^12.0"
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kristapsv\\VueDirectivesDocs\\Providers\\VueDirectivesDocsServiceProvider"
+            ]
+        }
+    },
     "minimum-stability": "stable"
 }
