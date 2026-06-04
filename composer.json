@@ -1,0 +1,24 @@
+{
+    "name": "kristapsv/vuedirectivedocs",
+    "description": "Artisan command to generate documentation for custom Vue directives",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["dev"],
+    "autoload": {
+        "psr-4": {
+            "Kristapsv\\Vuedirectivedocs\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "di.kristapsv",
+            "email": "kristaps.vecvagars@di.lv"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^9.0|^10.0|^11.0",
+        "illuminate/console": "^11.51"
+    },
+    "minimum-stability": "stable"
+}
