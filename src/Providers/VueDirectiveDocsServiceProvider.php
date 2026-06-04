@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Kristapsv\VueDirectivesDocs\Providers;
+namespace Kristapsv\VueDirectiveDocs\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Kristapsv\VueDirectivesDocs\Commands\GenerateVueDirectivesDocs;
 
-class VueDirectivesDocsServiceProvider extends ServiceProvider
+class VueDirectiveDocsServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {

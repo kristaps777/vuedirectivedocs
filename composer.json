@@ -6,7 +6,7 @@
     "keywords": ["dev"],
     "autoload": {
         "psr-4": {
-            "Kristapsv\\Vuedirectivedocs\\": "src/"
+            "Kristapsv\\VueDirectiveDocs\\": "src/"
         }
     },
     "authors": [
@@ -23,7 +23,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Kristapsv\\VueDirectivesDocs\\Providers\\VueDirectivesDocsServiceProvider"
+                "VueDirectiveDocsServiceProvider"
             ]
         }
     },

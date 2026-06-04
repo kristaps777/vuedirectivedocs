@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kristapsv\VueDirectivesDocs\Commands;
+namespace Kristapsv\VueDirectiveDocs\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
