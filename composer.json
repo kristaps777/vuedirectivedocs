@@ -23,7 +23,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VueDirectiveDocsServiceProvider"
+                "Kristapsv\\VueDirectiveDocs\\Providers\\VueDirectiveDocsServiceProvider"
             ]
         }
     },
