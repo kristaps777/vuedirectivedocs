@@ -17,7 +17,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | Files that should be excluded from processing (e.g., index files,
-    | interface files, etc.)
+    | interface files, etc.), supports wildcards.
     |
     */
     'excludes' => [

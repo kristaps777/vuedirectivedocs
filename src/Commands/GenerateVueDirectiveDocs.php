@@ -16,11 +16,15 @@ class GenerateVueDirectiveDocs extends Command
 
     protected $description = 'Generate IDE documentation for custom Vue directives';
 
+    private const array DefaultExcludes = [
+        '*.spec.ts',
+    ];
+
     public function handle(): int
     {
         $sourcePath = config('directives.source');
         $outputPath = base_path('vue-directives-docs.json');
-        $excludes = config('directives.excludes');
+        $excludes = [...self::DefaultExcludes, ...config('directives.excludes', [])];
 
         if (!File::exists($sourcePath)) {
             $this->error("Directives source directory not found: {$sourcePath}");
@@ -28,7 +32,7 @@ class GenerateVueDirectiveDocs extends Command
         }
 
         $directives = collect(File::files($sourcePath))
-            ->filter(fn (SplFileInfo $file): bool => !in_array($file->getFilename(), $excludes))
+            ->filter(fn (SplFileInfo $file): bool => !Str::is($excludes, $file->getFilename()))
             ->map(function (SplFileInfo $file): array {
                 $content = File::get($file->getPathname());
                 $filename = $file->getFilenameWithoutExtension();
